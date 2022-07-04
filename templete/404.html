@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+<body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="{% static 'images/ie8-panel/warning_bar_0000_us.jpg' %}" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-double-torus"></div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <section class="section section-single bg-accent">
+            <div class="section-single-inner">
+                <div class="section-single-header">
+                    <div class="container">
+                        <!--Brand--><a class="brand" href="{% url 'index_' %}"><img class="brand-logo-dark" src="{% static 'images/logo-default-154x53.png' %}" alt="" width="77" height="26"/><img class="brand-logo-light" src="{% static 'images/logo-inverse-154x53.png' %}" alt="" width="77" height="26"/></a>
+                    </div>
+                </div>
+                <div class="section-single-main">
+                    <div class="container">
+                        <!-- 404-->
+                        <h2>PAGE NOT FOUND</h2>
+                        <div class="text-extra-big text-white-opacity-02 font-accent">404</div>
+                        <p class="block-sm offset-top-50">The page requested couldn't be found - this could be due to a spelling error in the URL or a removed page.</p>
+                        <div class="group offset-top-30"><a class="btn btn-ellipse btn-specific" href="{% url 'index_' %}">back to home page</a></div>
+                    </div>
+                </div>
+                <div class="section-single-footer">
+                    <div class="container">
+                    </div>
+                </div>
+            </div>
+        </section>
+ {% endblock content %}

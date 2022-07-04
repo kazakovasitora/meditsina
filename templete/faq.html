@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+        <!-- general questions-->
+        <section class="section-lg section pb-xl-0" style="background-color:#fdfdfd">
+            <div class="container text-left">
+                <div class="row justify-content-sm-center">
+                    <div class="col-md-9 col-xl-8">
+                        <h3>General Questions</h3>
+                        <div class="offset-top-41 offset-lg-top-66">
+                            <!-- Classic Accordion-->
+                            <div class="responsive-tabs responsive-tabs-classic" data-type="accordion">
+                                <ul class="resp-tabs-list tabs-group-default" data-group="tabs-group-default">
+                                    <li>What are the advantages of purchasing a website template?</li>
+                                    <li>Do you provide any scripts with your templates?</li>
+                                    <li>What am I allowed to do with the templates?</li>
+                                    <li>In what formats are your templates available?</li>
+                                </ul>
+                                <div class="resp-tabs-container tabs-group-default" data-group="tabs-group-default">
+                                    <div>The major advantage is price: You get a high quality design for just $20-$70. You don’t have to hire a web designer or web design studio. Second advantage is time frame: It usually takes 5-15 days for a good designer
+                                        to produce a web page of such quality.</div>
+                                    <div>Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are inactive. Basic scripts can be easily added at www.zemez.io
+                                        If you are not sure that the element you’re interested in is active please contact our Support Chat for clarification.</div>
+                                    <div>You may build a website using the template in any way you like. You may not resell or redistribute templates.</div>
+                                    <div>Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file. In most templates, HTML is compatible with Adobe® Dreamweaver® and Microsoft® FrontPage®.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 offset-top-0 d-none d-xl-block"><img class="d-none d-lg-inline-block" src="{% static 'images/pages/faq-01-370x554.jpg' %}" width="370" height="554" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <!-- Frequently Asked Questions-->
+        <section class="section-98 section-sm-110 bg-default-liac">
+            <div class="container text-left">
+                <div class="row justify-content-sm-center justify-content-lg-start">
+                    <div class="col-md-10 col-lg-8">
+                        <h3>Frequently Asked Questions</h3>
+                        <div class="offset-top-41 offset-lg-top-66">
+                            <ul class="list-marked list-marked-gray inset-left-0 list">
+                                <li class="font-weight-bold"><a class="text-primary" href="#" data-custom-scroll-to="faq1">What are the advantages of purchasing a website template?</a></li>
+                                <li class="font-weight-bold"><a class="text-primary" href="#" data-custom-scroll-to="faq2">Do you provide any scripts with your templates?</a></li>
+                                <li class="font-weight-bold"><a class="text-primary" href="#" data-custom-scroll-to="faq3">What am I allowed to do with the templates?</a></li>
+                                <li class="font-weight-bold"><a class="text-primary" href="#" data-custom-scroll-to="faq4">In what formats are your templates available?</a></li>
+                            </ul>
+                        </div>
+                        <div class="offset-top-41 offset-lg-top-66">
+                            <h5 class="font-weight-bold" id="faq1">What are the advantages of purchasing a website template?</h5>
+                            <p>The major advantage is price: You get a high quality design for just $20-$70. You don’t have to hire a web designer or web design studio. Second advantage is time frame: It usually takes 5-15 days to produce a web page of such
+                                quality.</p>
+                            <h5 class="font-weight-bold" id="faq2">Do you provide any scripts with your templates?</h5>
+                            <p>Our templates do not include any additional scripts. Newsletter subscriptions, search fields, forums, image galleries (in HTML versions of Flash products) are inactive. Basic scripts can be easily added at www.zemez.io If you
+                                are not sure that the element you’re interested in is active please contact our Support Chat for clarification.</p>
+                            <h5 class="font-weight-bold" id="faq3">What am I allowed to do with the templates?</h5>
+                            <p>You may build a website using the template in any way you like. You may not resell or redistribute templates.</p>
+                            <h5 class="font-weight-bold" id="faq4">In what formats are your templates available?</h5>
+                            <p>Website templates are available in Photoshop and HTML formats. Fonts are included with the Photoshop file.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- RD Parallax-->
+        <section class="parallax-container" data-parallax-img="{% static 'images/background-04-1920x980.jpg' %}">
+            <div class="parallax-content section-98 section-sm-110 context-dark">
+                <div class="container text-left">
+                    <div class="row justify-content-sm-center justify-content-lg-start">
+                        <div class="col-md-10 col-lg-8">
+                            <h2>If You Have a Question Please Send Us a Letter</h2><a class="btn btn-ellipse btn-white" href="{% url 'kontak' %}">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ {% endblock content %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+        
+        <section class="section section-md p-xl-0">
+            <div class="container-fluid">
+                <h3 class="text-center">Full-width Layout</h3>
+                <div class="justify-content-sm-center row-30 row">
+                    <!-- Thumbnail Josip-->
+                    {% for i in rasmlar %}
+                    <figure class="thumbnail-josip thumbnail-big "><a href="{% url 'team_me' %}"><img width="384" height="410" src="{{ i.img.url }}" alt=""/></a>
+                        <div class="thumbnail-desc">
+                            <h5 class="thumbnail-josip-title text-medium text-white">{{ i.ismi }}</h5>
+                            <p class="d-none d-lg-block font-italic text-white offset-top-0">{{ i.lavozimi }}</p>
+                        </div>
+                        <figcaption><a class="btn btn-block btn-rect text-center text-lg-left btn-white" href="{% url 'team_me' %}">view full profile</a></figcaption>
+                    </figure>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+       <br>
+       {% endblock content %}
